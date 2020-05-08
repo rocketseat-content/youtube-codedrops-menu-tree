@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #7159c1;
+    font-family: "Montserrat", Arial;
+
+    color: #ffffffaa;
+
+    font-size: 2rem;
+}
+
+nav#tree {
+    margin-top: 45px;
+
+    max-width: 300px;
+}
+
+nav#tree ul {
+    padding-left: 16px;
+}
+
+nav#tree li {
+    list-style: none;
+
+    margin-top: 2px;
+}
+
+nav#tree li.has-children {
+    cursor: pointer;
+    position: relative;
+}
+
+nav#tree li.has-children:before {
+    content: '\f107';
+    color: #F3F3F4;
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 26px;
+    right: 15px;
+  }
+
+li > ul {
+    display: none;
+}
+
+li.open > ul {
+    display: block;
+} 
